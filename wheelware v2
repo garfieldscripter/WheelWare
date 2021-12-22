@@ -1,3 +1,5 @@
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
@@ -22,6 +24,7 @@ local VHUB = Instance.new("TextButton")
 local Syntax13 = Instance.new("TextButton")
 local StreamSniper = Instance.new("TextButton")
 local OwlHub = Instance.new("TextButton")
+local FEDog = Instance.new("TextButton")
 local CreditsFrame = Instance.new("Frame")
 local Credits1 = Instance.new("TextLabel")
 local Credits2 = Instance.new("TextLabel")
@@ -154,7 +157,6 @@ ScriptsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScriptsFrame.BackgroundTransparency = 1.000
 ScriptsFrame.Position = UDim2.new(0.246045694, 0, 0.167647064, 0)
 ScriptsFrame.Size = UDim2.new(0, 429, 0, 282)
-ScriptsFrame.Visible = false
 
 LXHub.Name = "LXHub"
 LXHub.Parent = ScriptsFrame
@@ -206,12 +208,23 @@ OwlHub.Text = "OwlHub"
 OwlHub.TextColor3 = Color3.fromRGB(0, 0, 0)
 OwlHub.TextSize = 14.000
 
+FEDog.Name = "FE Dog"
+FEDog.Parent = ScriptsFrame
+FEDog.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+FEDog.Position = UDim2.new(0.543123543, 0, 0.627659559, 0)
+FEDog.Size = UDim2.new(0, 154, 0, 31)
+FEDog.Font = Enum.Font.Fantasy
+FEDog.Text = "FE Dog"
+FEDog.TextColor3 = Color3.fromRGB(0, 0, 0)
+FEDog.TextSize = 14.000
+
 CreditsFrame.Name = "CreditsFrame"
 CreditsFrame.Parent = Frame
 CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CreditsFrame.BackgroundTransparency = 1.000
 CreditsFrame.Position = UDim2.new(0.246045694, 0, 0.167647064, 0)
 CreditsFrame.Size = UDim2.new(0, 428, 0, 282)
+CreditsFrame.Visible = false
 
 Credits1.Name = "Credits1"
 Credits1.Parent = CreditsFrame
@@ -257,7 +270,7 @@ UICorner_3.Parent = Frame
 
 -- Scripts:
 
-local function ENNJF_fake_script() -- Scripts.LocalScript 
+local function KIDED_fake_script() -- Scripts.LocalScript 
 	local script = Instance.new('LocalScript', Scripts)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -266,8 +279,8 @@ local function ENNJF_fake_script() -- Scripts.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
 	end)
 end
-coroutine.wrap(ENNJF_fake_script)()
-local function ODCFLW_fake_script() -- Credits.LocalScript 
+coroutine.wrap(KIDED_fake_script)()
+local function QFZXC_fake_script() -- Credits.LocalScript 
 	local script = Instance.new('LocalScript', Credits)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -276,8 +289,8 @@ local function ODCFLW_fake_script() -- Credits.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(ODCFLW_fake_script)()
-local function PLHS_fake_script() -- Settings.LocalScript 
+coroutine.wrap(QFZXC_fake_script)()
+local function DPXQLKE_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -286,16 +299,16 @@ local function PLHS_fake_script() -- Settings.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(PLHS_fake_script)()
-local function TUKA_fake_script() -- LXHub.LocalScript 
+coroutine.wrap(DPXQLKE_fake_script)()
+local function LZIV_fake_script() -- LXHub.LocalScript 
 	local script = Instance.new('LocalScript', LXHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LionelStreaming/GumaHub/main/LX-FE-Hub"))()
 	end)
 end
-coroutine.wrap(TUKA_fake_script)()
-local function SZOIDEL_fake_script() -- VHUB.LocalScript 
+coroutine.wrap(LZIV_fake_script)()
+local function UGIOIT_fake_script() -- VHUB.LocalScript 
 	local script = Instance.new('LocalScript', VHUB)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -305,8 +318,8 @@ local function SZOIDEL_fake_script() -- VHUB.LocalScript
 	
 	
 end
-coroutine.wrap(SZOIDEL_fake_script)()
-local function CJMTFB_fake_script() -- Syntax13.LocalScript 
+coroutine.wrap(UGIOIT_fake_script)()
+local function GBIPBR_fake_script() -- Syntax13.LocalScript 
 	local script = Instance.new('LocalScript', Syntax13)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -316,8 +329,8 @@ local function CJMTFB_fake_script() -- Syntax13.LocalScript
 	
 	
 end
-coroutine.wrap(CJMTFB_fake_script)()
-local function MSKHG_fake_script() -- StreamSniper.LocalScript 
+coroutine.wrap(GBIPBR_fake_script)()
+local function OYQZP_fake_script() -- StreamSniper.LocalScript 
 	local script = Instance.new('LocalScript', StreamSniper)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -327,8 +340,8 @@ local function MSKHG_fake_script() -- StreamSniper.LocalScript
 	
 	
 end
-coroutine.wrap(MSKHG_fake_script)()
-local function VDRNQX_fake_script() -- OwlHub.LocalScript 
+coroutine.wrap(OYQZP_fake_script)()
+local function WNPRX_fake_script() -- OwlHub.LocalScript 
 	local script = Instance.new('LocalScript', OwlHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -338,8 +351,19 @@ local function VDRNQX_fake_script() -- OwlHub.LocalScript
 	
 	
 end
-coroutine.wrap(VDRNQX_fake_script)()
-local function JERS_fake_script() -- Frame.LocalScript 
+coroutine.wrap(WNPRX_fake_script)()
+local function IBQCJC_fake_script() -- FEDog.LocalScript 
+	local script = Instance.new('LocalScript', FEDog)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/garfieldscripter/FE-Dog-Pet-not-mine-/main/fe%20dog"))()
+	end)
+	
+	
+	
+end
+coroutine.wrap(IBQCJC_fake_script)()
+local function WJEXFG_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -382,4 +406,4 @@ local function JERS_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JERS_fake_script)()
+coroutine.wrap(WJEXFG_fake_script)()
